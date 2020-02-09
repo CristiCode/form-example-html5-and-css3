@@ -1,0 +1,50 @@
+
+h1{
+    color: blue;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+h3{
+    font-size: 20px;
+}
+
+label{
+    color: grey;
+    font-size: 13px;
+    display: block;
+}
+
+input[type=text], input[type]{
+    border: black solid 2px;
+}
+
+.campo{
+    margin-bottom: 30px;
+}
+
+.campo > div{
+    display: inline-block;
+    margin-right: 140px;
+}
+
+form > div{
+    margin-left: 20px;
+}
+
+input:focus{
+    background-color: rgba(223, 190, 2, 0.932);
+}
+
+.seccion:hover{
+    background-color: rgb(245, 245, 115);
+}
+
+button{
+    background-color:  #c7a93b;
+    border: none;
+    padding: 10px;
+    margin-left: 800px;
+    font-size: 20px;
+}

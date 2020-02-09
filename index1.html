@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fomulario</title>
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="html5_logo.png" type="image/x-icon">
+    </head>
+    <body>
+        <h1>Formulario</h1>
+        <form name="formulario" action="examen.php" method="POST">
+            <!--INICIO SECCIÓN NOMBRE Y APELLIDOS-->
+            <div class="seccion">
+                <h3>Nombre y apellidos *</h3>
+
+                <div class="campo">
+                    <input type="text" id="nombre" name="nombre" required value="" placeholder="Ej.: Juan">
+                    <label for="nombre">Nombre</label>
+                </div>
+
+                <div class="campo">
+                    <input type="text" id="primer_apellido" name="primer_apellido" required  size="30" maxlength="30" value="" placeholder="Ej.: García">
+                    <label for="primer_apellido">Primer apellido</label>
+                </div>
+
+                <div class="campo">
+                    <input type="text" id="segundo_apellido" name="segundo_apellido" required size="30" maxlength="30" value="" placeholder="Ej.: Pérez">
+                    <label for="segundo_apellido">Segundo apellido</label>
+                </div>
+
+            </div>
+            <!--FIN DE LA SECCIÓN NOMBRE Y APELLIDOS-->
+
+            <!--INICIO DE SECCIÓN DIRECCIÓN-->
+            <div class="seccion">
+                <h3>Dirección *</h3>
+
+                <div class="campo">
+                    <input type="text" id="calle_num_piso_puerta" name="calle_num_piso_puerta" required size="50" maxlength="50" value="" placeholder="Ej.: Rue Percebe, 1">
+                    <label for="calle_num_piso_puerta">Calle, número, piso, puerta</label>
+                </div>
+
+                <div class="campo">
+                    <div>
+                        <input type="text" id="cod_postal" name="cod_postal" required pattern="[0-9]{5}" size="7" maxlength="5" value="" placeholder="Ej.: 28001">
+                        <label for="cod_postal">Código postal</label>
+                    </div>
+
+                    <div>
+                        <input type="text" id="municipio" name="municipio" required size="25" maxlength="25" value="" placeholder="Ej.: Madrid">
+                        <label for="municipio">Municipio</label>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <div>
+                        <select name="provincia">
+                            <option value="selecciona">- Selecciona -</option>
+                            <option value="madrid">Madrid</option>
+                            <option value="badajoz">Badajoz</option>
+                            <option value="valencia">Valencia</option>
+                        </select>
+                        <label for="provincia">Provincia</label>
+                    </div>
+            
+                    <div>
+                        <select name="pais">
+                            <option value="selecciona">- Selecciona -</option>
+                            <option value="españa">España</option>
+                            <option value="francia">Francia</option>
+                            <option value="portugal">Portugal</option>
+                        </select>
+                        <label for="pais">País</label>
+                    </div>
+                </div>
+            </div>
+            <!--FIN DE LA SECCIÓN DE DIRECCIÓN-->
+
+            <!--INICIO DE LA SECCIÓN DE EMAIL-->
+            <div class="seccion">
+                <h3>Email</h3>
+
+                <div class="campo">
+                    <input type="email" name="emailaddress" id="emailaddress" value="" placeholder="Ej.:juan@mail.com" pattern=" [a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" max>
+                    <label for="emailaddress">Correo Electrónico</label>
+                </div>
+            </div>
+            <!--FIN DE LA SECCIÓN DE EMAIU-->
+            
+            <!--INICIO DE LA SECCIÓN TELÉFONO-->
+            <div class="seccion">
+                <h3>Teléfono *</h3>
+
+                <div class="campo">
+                    <div>
+                        <input type="text" id="fijo" name="fijo" required value="" pattern="[0-9]{9}" placeholder="Ej.: 924568548">
+                        <label for="fijo">Fijo</label>
+                    </div>
+
+                    <div>
+                        <input type="text" id="movil" name="movil" required value="" pattern="[0-9]{9}" placeholder="Ej.:698457845">
+                        <label for="movil">Móvil</label>
+                    </div>
+                </div>
+            </div>
+            <!--FIN DE LA SECCIÓN DE TELÉFONO-->
+
+            <button type="submit"> Darme de alta &nbsp;<i class="fa fa-arrow-right"></i></button>
+        </form>
+    </body>
+</html>
