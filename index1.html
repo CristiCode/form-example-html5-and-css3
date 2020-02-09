@@ -10,7 +10,7 @@
     </head>
     <body>
         <h1>Formulario</h1>
-        <form name="formulario" action="examen.php" method="POST">
+        <form name="formulario" action="data.php" method="POST">
             <!--INICIO SECCIÓN NOMBRE Y APELLIDOS-->
             <div class="seccion">
                 <h3>Nombre y apellidos *</h3>
@@ -83,7 +83,7 @@
                 <h3>Email</h3>
 
                 <div class="campo">
-                    <input type="email" name="emailaddress" id="emailaddress" value="" placeholder="Ej.:juan@mail.com" pattern=" [a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" max>
+                    <input type="email" name="emailaddress" id="emailaddress" value="" placeholder="Ej.:juan@mail.com" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
                     <label for="emailaddress">Correo Electrónico</label>
                 </div>
             </div>
@@ -95,12 +95,12 @@
 
                 <div class="campo">
                     <div>
-                        <input type="text" id="fijo" name="fijo" required value="" pattern="[0-9]{9}" placeholder="Ej.: 924568548">
+                        <input type="text" id="fijo" name="fijo" required maxlength="9" value="" pattern="[0-9]{9}" placeholder="Ej.: 924568548">
                         <label for="fijo">Fijo</label>
                     </div>
 
                     <div>
-                        <input type="text" id="movil" name="movil" required value="" pattern="[0-9]{9}" placeholder="Ej.:698457845">
+                        <input type="text" id="movil" name="movil" required maxlength="9" value="" pattern="[0-9]{9}" placeholder="Ej.:698457845">
                         <label for="movil">Móvil</label>
                     </div>
                 </div>
